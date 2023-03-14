@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "5cd8f493-baf9-48a6-8f3e-1dc3c887c7b4",
+		"name": "Dimy Tech'",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add  Transaksi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customer_name",
+							"value": "John Doe",
+							"type": "default"
+						},
+						{
+							"key": "customer_addres",
+							"value": "Jl Rahayu no 30",
+							"type": "default"
+						},
+						{
+							"key": "product_name",
+							"value": "Meja Makan 120 x 100",
+							"type": "default"
+						},
+						{
+							"key": "payment_name",
+							"value": "Transfer",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/transaksi/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transaksi",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaksi",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaksi by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/transaksi/64102f1507579ed8bf70472e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transaksi",
+						"64102f1507579ed8bf70472e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Transaksi",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\" :\"john david\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/transaksi/64102f1507579ed8bf70472e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transaksi",
+						"64102f1507579ed8bf70472e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
